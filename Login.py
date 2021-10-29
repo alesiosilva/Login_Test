@@ -52,7 +52,7 @@ def Register():
             Database.conn.commit()
             messagebox.showinfo(title='Register Info', message='Register Sucessfull!')
 
-    Register = Button(RightFrame, text='Registrar', width=15, command=RegisterToDatabase)
+    Register = Button(RightFrame, text='Sign in', width=15, command=RegisterToDatabase)
     Register.place(x=150, y=200)
 
     def BackToLogin():
@@ -65,7 +65,7 @@ def Register():
         LoginButton.place(x=150)
         RegisterButton.place(x=150)
 
-    BackButton = Button(RightFrame, text='Voltar', width=15, command=BackToLogin)
+    BackButton = Button(RightFrame, text='Back', width=15, command=BackToLogin)
     BackButton.place(x=150, y=230)
 
 
